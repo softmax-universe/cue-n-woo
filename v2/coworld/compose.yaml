@@ -15,3 +15,8 @@ services:
       args:
         COMMISSIONER_KEY: config_driven
         RULESET_STRATEGY_CONFIG_NAME: cue_n_woo
+  optimizer:
+    image: coworld-optimizer:latest
+    platform: linux/amd64
+    build:
+      context: https://github.com/Metta-AI/optimizers.git#130c2348d1113244d243948fbc23cbd4e37fa479
