@@ -22,6 +22,14 @@ concept. Existing `list`, `specific`, and `random` concept sources are still sup
 
 Policy debugging notes:
 
+Build, certify, and upload the owned Coworld package from the repository root:
+
+```bash
+uv run coworld build --project v2/coworld --version 0.2.29
+uv run coworld certify v2/coworld/dist/coworld_manifest.json
+uv run coworld upload-coworld v2/coworld/dist/coworld_manifest.json
+```
+
 - `docs/llm_player_observation.md` documents the exact Bedrock Converse request and the state the LLM player sees.
 - Judge responses are capped by `judge_max_tokens`; the Claude policy prompt explicitly tells the model that prior
   judge answers may be truncated at that output-token limit.

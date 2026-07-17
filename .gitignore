@@ -17,3 +17,4 @@ tournament_signing_key.secret
 results.json
 replay.json
 replay.json.z
+v2/coworld/dist/

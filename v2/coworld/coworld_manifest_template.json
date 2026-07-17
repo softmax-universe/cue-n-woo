@@ -12,6 +12,7 @@
         "-m",
         "v2.coworld.game"
       ],
+      "source_url": "https://github.com/Metta-AI/cue-n-woo/tree/main/v2/coworld",
       "env": {}
     },
     "config_schema": {
@@ -315,6 +316,7 @@
         "-m",
         "v2.coworld.players.baseline"
       ],
+      "source_url": "https://github.com/Metta-AI/cue-n-woo/tree/main/v2/coworld/players",
       "description": "Bedrock Claude LLM player harness; the model makes every decision via submit_action and retries validation errors."
     },
     {
@@ -327,6 +329,7 @@
         "-m",
         "v2.coworld.players.stub_players"
       ],
+      "source_url": "https://github.com/Metta-AI/cue-n-woo/tree/main/v2/coworld/players",
       "description": "Deterministic offline stub for certification; asks/proposes precommitted text and always answers from a backup list, no LLM or AWS."
     },
     {
@@ -339,6 +342,7 @@
         "-m",
         "v2.coworld.players.kyle"
       ],
+      "source_url": "https://github.com/Metta-AI/cue-n-woo/tree/main/v2/coworld/players",
       "description": "Baseline LLM harness seeded with Kyle's optional per-phase question suggestions; the model may freely ignore them."
     }
   ],
@@ -355,7 +359,16 @@
   "reporter": [],
   "grader": [],
   "diagnoser": [],
-  "optimizer": [],
+  "optimizer": [
+    {
+      "id": "default-optimizer",
+      "name": "Default Optimizer",
+      "type": "optimizer",
+      "description": "Generic Coworld policy optimizer.",
+      "source_url": "https://github.com/Metta-AI/optimizers/tree/main",
+      "image": "{{OPTIMIZER_IMAGE}}"
+    }
+  ],
   "variants": [
     {
       "id": "default",
