@@ -19,4 +19,4 @@ services:
     image: coworld-optimizer:latest
     platform: linux/amd64
     build:
-      context: https://github.com/Metta-AI/optimizers.git#130c2348d1113244d243948fbc23cbd4e37fa479
+      context: https://github.com/softmax-universe/optimizers.git#130c2348d1113244d243948fbc23cbd4e37fa479

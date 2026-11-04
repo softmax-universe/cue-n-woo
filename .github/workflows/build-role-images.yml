@@ -28,7 +28,7 @@ jobs:
       matrix:
         include:
           - name: commissioner
-            image: metta-ai/cue-n-woo-commissioner
+            image: softmax-universe/cue-n-woo-commissioner
             context: ./commissioner
             file: ./commissioner/commissioners/Dockerfile
             commissioner_key: config_driven
