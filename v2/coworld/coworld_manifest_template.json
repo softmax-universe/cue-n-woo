@@ -1,9 +1,9 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Metta-AI/coworld/main/src/coworld/coworld_manifest_schema.json",
+  "$schema": "https://raw.githubusercontent.com/softmax-universe/coworld/main/src/coworld/coworld_manifest_schema.json",
   "game": {
     "name": "cue_n_woo",
     "description": "Two-player theory-of-mind game backed by Bedrock Claude Sonnet.",
-    "owner": "metta-ai",
+    "owner": "softmax-universe",
     "runnable": {
       "type": "game",
       "image": "{{CUE_N_WOO_IMAGE}}",
@@ -12,7 +12,7 @@
         "-m",
         "v2.coworld.game"
       ],
-      "source_url": "https://github.com/Metta-AI/cue-n-woo/tree/main/v2/coworld",
+      "source_url": "https://github.com/softmax-universe/cue-n-woo/tree/main/v2/coworld",
       "env": {}
     },
     "config_schema": {
@@ -273,11 +273,11 @@
     "protocols": {
       "player": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cue-n-woo/blob/main/v2/coworld/docs/player_protocol_spec.md"
+        "value": "https://github.com/softmax-universe/cue-n-woo/blob/main/v2/coworld/docs/player_protocol_spec.md"
       },
       "global": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cue-n-woo/blob/main/v2/coworld/docs/global_protocol_spec.md"
+        "value": "https://github.com/softmax-universe/cue-n-woo/blob/main/v2/coworld/docs/global_protocol_spec.md"
       }
     },
     "docs": {
@@ -316,7 +316,7 @@
         "-m",
         "v2.coworld.players.baseline"
       ],
-      "source_url": "https://github.com/Metta-AI/cue-n-woo/tree/main/v2/coworld/players",
+      "source_url": "https://github.com/softmax-universe/cue-n-woo/tree/main/v2/coworld/players",
       "description": "Bedrock Claude LLM player harness; the model makes every decision via submit_action and retries validation errors."
     },
     {
@@ -329,7 +329,7 @@
         "-m",
         "v2.coworld.players.stub_players"
       ],
-      "source_url": "https://github.com/Metta-AI/cue-n-woo/tree/main/v2/coworld/players",
+      "source_url": "https://github.com/softmax-universe/cue-n-woo/tree/main/v2/coworld/players",
       "description": "Deterministic offline stub for certification; asks/proposes precommitted text and always answers from a backup list, no LLM or AWS."
     },
     {
@@ -342,7 +342,7 @@
         "-m",
         "v2.coworld.players.kyle"
       ],
-      "source_url": "https://github.com/Metta-AI/cue-n-woo/tree/main/v2/coworld/players",
+      "source_url": "https://github.com/softmax-universe/cue-n-woo/tree/main/v2/coworld/players",
       "description": "Baseline LLM harness seeded with Kyle's optional per-phase question suggestions; the model may freely ignore them."
     }
   ],
@@ -352,7 +352,7 @@
       "name": "Cue n Woo Commissioner",
       "type": "commissioner",
       "description": "Cue n Woo commissioner with leaderboard-neighbor scheduling and throttled episode dispatch.",
-      "source_url": "https://github.com/Metta-AI/cue-n-woo/tree/main/commissioner/commissioners/ruleset_strategy_commissioner",
+      "source_url": "https://github.com/softmax-universe/cue-n-woo/tree/main/commissioner/commissioners/ruleset_strategy_commissioner",
       "image": "{{COMMISSIONER_IMAGE}}"
     }
   ],
@@ -365,7 +365,7 @@
       "name": "Default Optimizer",
       "type": "optimizer",
       "description": "Generic Coworld policy optimizer.",
-      "source_url": "https://github.com/Metta-AI/optimizers/tree/130c2348d1113244d243948fbc23cbd4e37fa479",
+      "source_url": "https://github.com/softmax-universe/optimizers/tree/130c2348d1113244d243948fbc23cbd4e37fa479",
       "image": "{{OPTIMIZER_IMAGE}}"
     }
   ],
